@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">70,888</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Test1</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">60,493</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">131,381</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Assignment.BrowserstackTest</td><td><a href="#m0">TC01</a></td><td rowspan="1">1722343244810</td><td rowspan="1">70812</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Test1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Assignment.BrowserstackTest</td><td><a href="#m1">TC01</a></td><td rowspan="1">1722343315818</td><td rowspan="1">60486</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">Assignment.BrowserstackTest#TC01</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Samsung Galaxy S22 Ultra</td><td>12.0</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: &apos;com.androidsample.generalstore&apos; is still running after 500ms timeout
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [62dffd38ba7a78cbbb031b277f9a26d59f45a45e, terminateApp {bundleId=com.androidsample.generalstore}]
+Capabilities {appium:appActivity: com.androidsample.generalst..., appium:appPackage: com.androidsample.generalstore, appium:automationName: uiautomator2, appium:bundleID: com.androidsample.generalstore, appium:bundleId: com.androidsample.generalstore, appium:chromedriverPort: 18085, appium:chromedriverPorts: [[18155, 18165]], appium:databaseEnabled: false, appium:desired: {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, automationName: uiautomator2, bundleID: com.androidsample.generalstore, bundleId: com.androidsample.generalstore, chromedriverPort: 18085, chromedriverPorts: [[18155, 18165]], deviceName: samsung galaxy s22 ultra, disableSuppressAccessibilityService: true, goog:chromeOptions: {}, nativeWebScreenshot: true, newCommandTimeout: 0, platformName: Android, platformVersion: 12.0, skipServerInstallation: true, systemPort: 8205, udid: R5CT238S90Z}, appium:deviceApiLevel: 31, appium:deviceManufacturer: samsung, appium:deviceModel: SM-S908E, appium:deviceName: R5CT238S90Z, appium:deviceScreenDensity: 450, appium:deviceScreenSize: 1080x2316, appium:deviceUDID: R5CT238S90Z, appium:disableSuppressAccessibilityService: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 0, appium:pixelRatio: 2.8125, appium:platformVersion: 12, appium:skipServerInstallation: true, appium:statBarHeight: 75, appium:systemPort: 8205, appium:takesScreenshot: true, appium:udid: R5CT238S90Z, appium:viewportRect: {height: 2031, left: 0, top: 75, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, goog:chromeOptions: {}, platformName: ANDROID}
+Session ID: 62dffd38ba7a78cbbb031b277f9a26d59f45a45e
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:675)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:308)
+	at io.appium.java_client.CommandExecutionHelper.execute(CommandExecutionHelper.java:38)
+	at io.appium.java_client.InteractsWithApps.terminateApp(InteractsWithApps.java:298)
+	at io.appium.java_client.InteractsWithApps.terminateApp(InteractsWithApps.java:266)
+	at Assignment.BrowserstackTest.TC01(BrowserstackTest.java:43)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test1</h2><h3 id="m1">Assignment.BrowserstackTest#TC01</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Google Pixel 7 Pro</td><td>13.0</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

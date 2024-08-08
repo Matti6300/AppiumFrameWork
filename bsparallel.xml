@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Suite">
+  <test thread-count="5" name="Test">
+		<parameter name="deviceName" value="Samsung Galaxy S22 Ultra"></parameter>
+		
+		<parameter name="version" value="12.0"></parameter>
+		<classes>
+			<class name="Assignment.BrowserstackTest" />
+
+		</classes>
+	</test> <!--
+	Test -->
+	<test thread-count="5" name="Test1">
+		<parameter name="deviceName" value="Google Pixel 7 Pro"></parameter>
+		
+		<parameter name="version" value="13.0"></parameter>
+		<classes>
+			<class name="Assignment.BrowserstackTest" />
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!-- Suite -->

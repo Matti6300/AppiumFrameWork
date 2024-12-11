@@ -14,11 +14,11 @@ import io.appium.java_client.android.AndroidDriver;
 
 public class BrowserstackTest {
 
-	public static final String url = "https://bharathmatti_XKoZAx:P4qZ4EgkseXBzTqgq6eK@hub-cloud.browserstack.com/wd/hub";
-
-	@Test@Parameters({"deviceName","version"})
+	public static final String url = "https://mattibharath_BGN3gi:TrYwhr3vsYLztmak7StS@hub-cloud.browserstack.com/wd/hub";
+	@Parameters({"deviceName","version"})
+	@Test
 	public void TC01(String deviceName, String version) throws MalformedURLException, InterruptedException {
-
+        
 		DesiredCapabilities dc = new DesiredCapabilities();
 		HashMap<String, Object> browserstackOptions = new HashMap<String, Object>();
 		browserstackOptions.put("projectName", "general Strore");
@@ -29,7 +29,7 @@ public class BrowserstackTest {
 		dc.setCapability("platformName", "android");
 		dc.setCapability("platformVersion", version);
 		dc.setCapability("deviceName", deviceName);
-		dc.setCapability("app", "bs://425d9a0c7efd08c21f57c9932e578e57c33bc8db");
+		dc.setCapability("app", "bs://86a39e60644f348314add1892c977cfea883d6eb");
 
 		AndroidDriver driver = new AndroidDriver(new URL(url), dc);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(25));

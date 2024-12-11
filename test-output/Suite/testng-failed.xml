@@ -12,4 +12,15 @@
       </class> <!-- Assignment.BrowserstackTest -->
     </classes>
   </test> <!-- Test(failed) -->
+  <test thread-count="2" parallel="classes" name="Test1(failed)">
+    <parameter name="deviceName" value="Google Pixel 7 Pro"/>
+    <parameter name="version" value="13.0"/>
+    <classes>
+      <class name="Assignment.BrowserstackTest">
+        <methods>
+          <include name="TC01" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Assignment.BrowserstackTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

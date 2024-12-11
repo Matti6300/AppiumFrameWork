@@ -18,7 +18,9 @@ public class WebBrowser {
 		Options.put("build", "nothing_0.1");
 		Options.put("name", "facebook");
 		browserOptions.setCapability("sauce:options", Options);
-		RemoteWebDriver driver= new RemoteWebDriver(new URL("https://bharathmatti_073W5P:xi2zo3UNHjD82ZS5HWjt@hub-cloud.browserstack.com/wd/hub"),browserOptions);
+		
+		RemoteWebDriver driver= new RemoteWebDriver(new URL("https://mattibharath_BGN3gi:TrYwhr3vsYLztmak7StS@hub-cloud.browserstack.com/wd/hub"),browserOptions);
+		driver.manage().window().maximize();
 		driver.get("https://facebook.com/");
 		System.out.println(driver.getTitle());
 		driver.quit();

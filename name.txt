@@ -1,2 +1,0 @@
-this is the frist line of file
-this is second line from local branch

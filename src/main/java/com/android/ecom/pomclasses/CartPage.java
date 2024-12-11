@@ -28,6 +28,7 @@ public class CartPage {
 	@FindBy(id = "com.androidsample.generalstore:id/btnProceed")
 	private WebElement WebsiteButton;
 
+	
 	public WebElement getPageVerifier() {
 		return PageVerifier;
 	}
